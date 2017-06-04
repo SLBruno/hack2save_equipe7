@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20170604192655) do
     t.string "city", null: false
     t.string "state", null: false
     t.string "country", null: false
-    t.string "grade"
+    t.integer "grade"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -94,7 +94,7 @@ ActiveRecord::Schema.define(version: 20170604192655) do
     t.string "city", null: false
     t.string "state", null: false
     t.string "country", null: false
-    t.string "grade"
+    t.integer "grade"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

@@ -10,7 +10,7 @@ class DeviseCreateInstitutions < ActiveRecord::Migration[5.1]
       t.string :city,               null: false
       t.string :state,              null: false
       t.string :country,            null: false
-      t.string :grade              
+      t.float :grade              
 
       ## Recoverable
       t.string   :reset_password_token
