@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  app:
+    depends_on:
+      - 'postgres'
+    build: .
+    command: bash scripts/start.sh
+    ports:
+      - '3000:3000'
+    volumes:
+      - '.:/hack2save_equipe7'
+    volumes_from:
+    - box
+
+  postgres:
+    image: 'postgres:9.5'
+    volumes:
+      - 'postgres:/var/lib/postgresql/data'
+
+  box:
+    image: busybox
+    volumes:
+      - /box
+
+volumes:
+  postgres:
+  box:

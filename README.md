@@ -1,24 +1,13 @@
-# README
+## Dependencies
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is docker based, so you should have `docker` and `docker-compose` installed in your machine.
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+Clone this repository: `git clone https://github.com/rafaelBadan/hack2save_equipe7.git`.
 
-* System dependencies
+In the repository folder, run:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  * `docker-compose build`;
+  * `docker-compose run --rm rake db:create`;
+  * `docker-compose run --rm rake db:migrate`.  
