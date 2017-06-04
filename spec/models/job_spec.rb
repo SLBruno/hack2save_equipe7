@@ -2,6 +2,20 @@ require 'rails_helper'
 
 RSpec.describe Job, type: :model do
   describe "Validations" do
+    it { should belong_to :institution }
+
+    it { have_and_belong_to_many :categories }
+
+    it { have_many :job_applications }
+
+    it do
+      have_many(:candidates)
+      .through(:job_applications)
+      .source(:user)
+    end
+  end
+
+  describe "Validations" do
     it "is true with valid attributes" do
       expect(build(:job)).to be_valid
     end

@@ -1,6 +1,20 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  describe "Relationships" do
+    it { should have_many(:job_applications) }
+
+    it do
+      should have_many(:applications)
+        .through(:job_applications)
+        .source(:job)
+    end
+
+    it { should have_many(:reviews_made).class_name(:Review) }
+
+    it { should have_many(:reviews_received).class_name(:Review) }
+  end
+
   describe "Validations" do
     it "is true with valid attributes" do
       expect(build(:user)).to be_valid

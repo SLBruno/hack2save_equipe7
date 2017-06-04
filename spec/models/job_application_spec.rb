@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe JobApplication, type: :model do
+  describe "Relationships" do
+    it { should belong_to :job }
+
+    it { should belong_to :user }
+  end
+
   describe "Validations" do
     it "is valid with valid attributes" do
       expect(build(:job_application)).to be_valid
