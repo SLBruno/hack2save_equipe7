@@ -21,6 +21,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'coffee_routes'
 
 group :development, :test do
   gem 'byebug', platform: :mri
