@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 20170604192655) do
     t.boolean "accepted", default: false, null: false
     t.boolean "finished", default: false, null: false
     t.integer "number_of_days_attended"
+    t.text "note"
     t.bigint "user_id"
     t.bigint "job_id"
     t.datetime "created_at", null: false
