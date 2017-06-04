@@ -22,6 +22,8 @@ end
 
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'coffee_routes'
+gem 'devise'
+gem 'cancancan'
 
 group :development, :test do
   gem 'byebug', platform: :mri
