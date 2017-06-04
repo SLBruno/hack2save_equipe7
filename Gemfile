@@ -26,6 +26,8 @@ gem 'devise'
 gem 'cancancan'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem "factory_girl_rails"
   gem 'byebug', platform: :mri
 end
 
