@@ -9,6 +9,8 @@
   </head>
 
   <body data-controller="<%= controller_name.camelize %>" data-action="<%= action_name %>">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
