@@ -32,7 +32,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rake'
   gem 'poltergeist'
   gem 'capybara'
   gem 'database_cleaner'
