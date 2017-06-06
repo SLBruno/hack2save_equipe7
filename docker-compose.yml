@@ -9,7 +9,7 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - '.:/hack2save_equipe7'
+      - '.:/voluntea'
     volumes_from:
     - box
 
