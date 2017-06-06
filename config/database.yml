@@ -2,17 +2,17 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  #host: postgres
-  #user: postgres
+  host: postgres
+  user: postgres
 
 development:
   <<: *default
-  database: hack2save_equipe7_development
+  database: voluntea_development
 
 test:
   <<: *default
-  database: hack2save_equipe7_test
+  database: voluntea_test
 
 production:
   <<: *default
-  database: hack2save_equipe7_production
+  database: voluntea_production
